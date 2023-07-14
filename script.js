@@ -1,29 +1,29 @@
 const questions = [
     {
-        question: "How big is my ass?",
+        question: "Question?",
         answers: [
             { text: "Big", correct: false},
             { text: "Very Big", correct: false},
             { text: "o", correct: false},
-            { text: "fuck", correct: true},
+            { text: "e", correct: true},
         ]
     },
     {
-        question: "===================?",
+        question: "Question??",
         answers: [
             { text: "Big", correct: false},
             { text: "Very Big", correct: false},
             { text: "o", correct: true},
-            { text: "fuck", correct: false},
+            { text: "e", correct: false},
         ]
     },
     {
-        question: "aaaaaaaaaaa?",
+        question: "Question??",
         answers: [
             { text: "Big", correct: false},
             { text: "Very Big", correct: true},
             { text: "o", correct: false},
-            { text: "fuck", correct: false},
+            { text: "e", correct: false},
         ]
     }
 ];
