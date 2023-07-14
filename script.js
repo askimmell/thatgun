@@ -32,6 +32,10 @@ const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 
+var audio = document.getElementById('audio');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var count = 0;
+
 let currentQuestionIndex = 0;
 let score = 0;
 
@@ -109,6 +113,18 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 })
+
+function playPause(){
+    if(count == 0){
+        count = 1;
+        audio.play();
+        playPauseBTN.innerHTML = "Pause &#9208;";
+    }else{
+        count = 0;
+        audio.pause();
+        playPauseBTN.innerHTML = "Play &#9208;";
+    }
+}
 
 startQuiz();
 
